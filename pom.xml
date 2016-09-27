@@ -11,7 +11,7 @@
     <modules>
         <module>bear-core</module>
         <module>bear-net</module>
-        <module>bear-test</module>
+        <module>bear-qatest</module>
         <module>distribution</module>
         <module>docs</module>
     </modules>
@@ -439,30 +439,6 @@
             </dependency>
 
             <dependency>
-                <groupId>com.google.inject</groupId>
-                <artifactId>guice</artifactId>
-                <version>${guice.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-multibindings</artifactId>
-                <version>${guice.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-assistedinject</artifactId>
-                <version>${guice.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-grapher</artifactId>
-                <version>${guice.version}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>com.netflix.governator</groupId>
                 <artifactId>governator</artifactId>
                 <version>${governator.version}</version>
@@ -481,89 +457,9 @@
             </dependency>
 
             <dependency>
-                <groupId>io.grpc</groupId>
-                <artifactId>grpc-netty</artifactId>
-                <version>${grpc.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <artifactId>netty-codec-http2</artifactId>
-                        <groupId>io.netty</groupId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-
-            <dependency>
-                <groupId>io.grpc</groupId>
-                <artifactId>grpc-protobuf</artifactId>
-                <version>${grpc.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.grpc</groupId>
-                <artifactId>grpc-testing</artifactId>
-                <version>${grpc.version}</version>
-                <scope>test</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>io.grpc</groupId>
-                <artifactId>grpc-interop-testing</artifactId>
-                <version>${grpc.version}</version>
-                <scope>test</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>io.grpc</groupId>
-                <artifactId>grpc-auth</artifactId>
-                <version>${grpc.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.grpc</groupId>
-                <artifactId>grpc-grpclb</artifactId>
-                <version>${grpc.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.grpc</groupId>
-                <artifactId>grpc-stub</artifactId>
-                <version>${grpc.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.esotericsoftware</groupId>
-                <artifactId>kryo</artifactId>
-                <version>${kryo.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>de.javakaffee</groupId>
-                <artifactId>kryo-serializers</artifactId>
-                <version>${kryo-serializers.version}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>org.jctools</groupId>
                 <artifactId>jctools-core</artifactId>
                 <version>${jctools.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.github.ben-manes.caffeine</groupId>
-                <artifactId>caffeine</artifactId>
-                <version>${caffeine.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.github.ben-manes.caffeine</groupId>
-                <artifactId>jcache</artifactId>
-                <version>${caffeine.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.github.ben-manes.caffeine</groupId>
-                <artifactId>guava</artifactId>
-                <version>${caffeine.version}</version>
             </dependency>
 
             <dependency>
@@ -600,126 +496,6 @@
                 <groupId>org.javassist</groupId>
                 <artifactId>javassist</artifactId>
                 <version>${javassist.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.reflections</groupId>
-                <artifactId>reflections</artifactId>
-                <version>${reflections.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <artifactId>annotations</artifactId>
-                        <groupId>com.google.code.findbugs</groupId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-
-            <dependency>
-                <groupId>com.fasterxml</groupId>
-                <artifactId>classmate</artifactId>
-                <version>${classmate.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.thoughtworks.paranamer</groupId>
-                <artifactId>paranamer</artifactId>
-                <version>${paranamer.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.ow2.asm</groupId>
-                <artifactId>asm-all</artifactId>
-                <version>${asm.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.ow2.asm</groupId>
-                <artifactId>asm</artifactId>
-                <version>${asm.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.ow2.asm</groupId>
-                <artifactId>asm-analysis</artifactId>
-                <version>${asm.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.ow2.asm</groupId>
-                <artifactId>asm-commons</artifactId>
-                <version>${asm.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.ow2.asm</groupId>
-                <artifactId>asm-tree</artifactId>
-                <version>${asm.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.ow2.asm</groupId>
-                <artifactId>asm-util</artifactId>
-                <version>${asm.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>aopalliance</groupId>
-                <artifactId>aopalliance</artifactId>
-                <version>${aopalliance.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.objenesis</groupId>
-                <artifactId>objenesis</artifactId>
-                <version>${objenesis.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.zeroturnaround</groupId>
-                <artifactId>zt-exec</artifactId>
-                <version>${zt-exec.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.zeroturnaround</groupId>
-                <artifactId>zt-process-killer</artifactId>
-                <version>${zt-process-killer.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.zeroturnaround</groupId>
-                <artifactId>zt-zip</artifactId>
-                <version>${zt-zip.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.zaxxer</groupId>
-                <artifactId>nuprocess</artifactId>
-                <version>${nuprocess.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>net.java.dev.jna</groupId>
-                <artifactId>jna</artifactId>
-                <version>${jna.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>net.java.dev.jna</groupId>
-                <artifactId>jna-platform</artifactId>
-                <version>${jna.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.github.jnr</groupId>
-                <artifactId>jnr-ffi</artifactId>
-                <version>${jnr-ffi.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.github.jnr</groupId>
-                <artifactId>jnr-posix</artifactId>
-                <version>${jnr-posix.version}</version>
             </dependency>
 
         </dependencies>
