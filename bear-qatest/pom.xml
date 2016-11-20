@@ -13,6 +13,11 @@
 
 
     <dependencies>
+        <dependency>
+            <groupId>com.bear.tools</groupId>
+            <artifactId>bear-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <!-- Test libraries -->
         <dependency>
             <groupId>junit</groupId>
@@ -35,23 +40,7 @@
             <artifactId>awaitility-java8</artifactId>
         </dependency>
 
-        <!-- Core libraries -->
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.google.protobuf</groupId>
-            <artifactId>protobuf-java</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.google.protobuf</groupId>
-            <artifactId>protobuf-java-util</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.lmax</groupId>
-            <artifactId>disruptor</artifactId>
-        </dependency>
+
     </dependencies>
 
 </project>
